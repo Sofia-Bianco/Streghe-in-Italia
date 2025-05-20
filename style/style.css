@@ -1,0 +1,128 @@
+body {
+	font-family: "Georgia", serif;
+}
+
+.bg-dark {
+  display: block;
+  padding: 10px;
+  background-color: mediumpurple;
+}
+
+.footer-link {
+  color: black;
+}
+
+.h1 {
+  font-weight: bold;
+}
+.introduction {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  color: white;
+}
+
+.wallpaper {
+  background-image: url(../img/gufo-1.jpg);
+  height: 600px;
+}
+
+.searchbar {
+  margin-left: 20%;
+  margin-top: 3%;
+  width: 50%;
+}
+
+.btn-light {
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+#map {
+  height: 450px;
+  width: 70%;
+  margin-left: 15% !important;
+  margin-right: 15% !important;
+  margin-bottom:5%;
+  padding-top:5% !important;
+}
+
+.main-cards {
+  padding-left: 6%;
+  padding-top: 3%;
+  padding-bottom:6%;
+}
+
+.wallpaper-tools {
+  background-color:  #7575a3;
+}
+
+footer {
+  background-color: mediumpurple !important;
+  padding: 3%;
+  text-align: center;
+}
+a:link {
+  color:black;
+}
+
+/* luoghi.html */
+
+.place-cards {
+  margin-left: 7%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.place-cards-row {
+   padding-bottom: 5%;
+}
+
+.pagination {
+  margin-left: 8%;
+}
+
+a {
+  color: black;
+}
+
+/* item.html */
+
+.item-document {
+  height: auto;
+  width: auto;
+}
+
+/* project-plan.html */
+
+
+.Testo-project-plan {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mappa-concettuale {
+  height: auto;
+  width: auto;
+}
+
+.schema-dipendenze {
+  height:auto;
+  width:auto;
+}
+
+.homepage-layout {
+  height: auto;
+  width: auto;
+  margin-left: 30%;
+}
+
+.luoghi-layout {
+  height: auto;
+  width: auto;
+  margin-left:30%;
+}
+.elemento-foglia-layout {
+  height: auto;
+  width: auto;
+  margin-left: 30%;
+}
