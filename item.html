@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Streghe in Italia</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Sofia Biancosino">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--inserisco Leafleet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+	<link href="index.html">
+  <link href="luoghi.html">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: mediumpurple;">
+      <a class="navbar-brand" href="#">
+          <img src="img/streghe-in-italia-logo-1.jpg" width="50" height="50" alt="Logo Streghe in Italia">
+        </a>
+      <a class="navbar-brand" href="#">Streghe in Italia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="luoghi.html">Luoghi</a>
+        <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Secoli
+        </a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">1300</a>
+              <a class="dropdown-item" href="#">1400</a>
+              <a class="dropdown-item" href="#">1500</a>
+              <a class="dropdown-item" href="#">1600</a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-light" style="background-color: mediumpurple;">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      </nav>
+      </div>
+     </nav>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Luoghi</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Urbino</li>
+    </ol>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+  <div class="item-document">
+    <img src="img/Lamiarum-documento.jpg" class="img-fluid" alt="Copertina del documento sul processo di donna Laura">
+  </div>
+</div>
+<div class="col-md-6">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Metadati</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Titolo</td>
+      <td><a href="https://sanzio.uniurb.it/server/iiif/a9b2b118-56c2-4e9b-96b3-a733468a3001/manifest">Lamiarum, Casa Vincenzi. Processi a Streghe ed ai Bestemmiatori, Atti giudiziari diversi e carte relative.</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Autore</td>
+      <td>Atti processuali.</td>
+    </tr>
+    <tr>
+      <td scope="row">Data</td>
+      <td>1587</td>
+    </tr>
+    <tr>
+      <td scope="row">Fonte</td>
+      <td><a href="">Sanzio Digital Heritage</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Luogo</td>
+      <td>Urbino</td>
+    </tr>
+    <tr>
+      <td scope="row">Lingua</td>
+      <td>Latino</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+  <div class="container-fluid descrizione">
+    <p>Questo documento del 1587 riporta le scritture relative al processo di donna Laura da Farneta, una guaritrice della zona di Urbino, che fu accusata di stregoneria. L'indagine viene condotta dalla Curia Arcivescovile di Urbino, dopo che vi arrivarono diverse voci su questa donna. Ventisei persone fecero da testimoni in questo processo, affermando che fosse una strega e raccontando di averla vista attirare tempeste per distruggere i raccolti e per far ammalare il bestiame. Il 10 Agosto donna Laura fu arrestata e portata in prigione. La donna provò a difendersi, dicendo di usare rimedi erboristici che le avevano insegnato i frati cappuccini, ma questo aggravò la sua situazione. La accusarono di fare uso di un unguento creato con il grasso dei bambini che aveva ucciso e di essere una delle concubine del diavolo, e la torturarono. Su cosa le sia successo dopo non ci sono informazioni.
+    </p>
+  </div>
+</div>
+</div>
+<footer>
+    <p>
+      <a class="footer-link" href="">Sofia Biancosino -</a>
+      <a class="footer-link" href="">Ultimo aggiornamento dei contenuti: 20/05/25 -</a>
+      <a class="footer-link" href="project-plan.html">Project plan -</a>
+      <a class="footer-link" href="">Copyright -</a>
+      <a class="footer-link" href="">Supporto</a>
+    </p>
+</footer>
+
+</body>
+</html>

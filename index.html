@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Streghe in Italia</title>
+<meta charset="utf-8">
+<meta name="author" content="Sofia Biancosino">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--inserisco Leafleet-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: mediumpurple;">
+      <a class="navbar-brand" href="#">
+          <img src="img/streghe-in-italia-logo-1.jpg" width="50" height="50" alt="Logo Streghe in Italia">
+        </a>
+      <a class="navbar-brand" href="#">Streghe in Italia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="luoghi.html">Luoghi <span class="sr-only">(current)</span></a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Secoli
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">1300</a>
+                <a class="dropdown-item" href="#">1400</a>
+                <a class="dropdown-item" href="#">1500</a>
+                <a class="dropdown-item" href="#">1600</a>
+              </div>
+            </div>
+      </div>
+      <nav class="navbar navbar-light" style="background-color: mediumpurple;">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      </nav>
+      </div>
+     </nav>
+     <div class="wallpaper">
+       <div class="row container-fluid introduction">
+         <h1><b>Le streghe in Italia</b></h1>
+          <p>Il termine strega deriva dalle parole latine "strix,-igis" e "striga" che significano "civetta, uccello notturno" e che poi indicheranno, in termini più ampi, chi è esperto di magia e incantesimi. Nell'Antica Roma questi uccelli erano di cattivo auspicio, perchè si narrava che si cibassero di carne umana, soprattutto di bambini.</p>
+          <p>Se, prima, chi si occupava di stregoneria veniva tollerato, dal Medioevo in poi si dà inizio alla stagione della caccia alle streghe, la quale, nei secoli, fece molte vittime</p>
+          <p>Lo scopo del progetto è quello di raccogliere documenti e testi sui processi per stregoneria avvenuti in Italia e sui loro protagonisti.</p>
+        
+          <input class="form-control searchbar" type="text" placeholder="Search" readonly>
+          <button type="button" class="btn btn-light">Search</button>
+        </div>
+      </div>
+  </div>
+  <div class="wallpaper-tools">
+    <section class="map-section">
+      <div class="container-fluid">
+        <h1>I luoghi dei processi</h1>
+        <div id="map">
+          <script>
+            var map = L.map('map').setView([42.5, 12.5], 6);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+            L.marker([43.99841361495436, 7.767710687260411]).addTo(map).bindPopup("Triora");
+            L.marker([41.12993571707258, 14.78092829542495]).addTo(map).bindPopup("Benevento");
+            L.marker([44.49396380091562, 11.337860939562846]).addTo(map).bindPopup("Bologna");
+            L.marker([46.50555145980467, 11.496150649357276]).addTo(map).bindPopup("Castel Presule");
+            L.marker([44.65012139417433, 7.3473105640896454]).addTo(map).bindPopup("Rifreddo, Cuneo");
+            L.marker([43.726001145129594, 12.63539732291283]).addTo(map).bindPopup("Urbino");
+            L.marker([45.9780, 10.3300]).addTo(map).bindPopup("Val Camonica");
+            L.marker([42.17054237326904, 12.597376630031142]).addTo(map).bindPopup("Fiano Romano");
+            L.marker([44.6502697, 10.8393303]).addTo(map).bindPopup("Modena");
+          </script>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <h1><a href="">I testi dell'Inquisizione</a></h1>
+        <div class="row">
+          <div class="col-md-4 main-cards">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Malleus_maleficarum.jpg" class="card-img-top" alt="Malleus Maleficarum di Einrich Kramer">
+              <div class="card-body">
+                <a class="card-link" href="">Malleus Maleficarum di Einrich Kramer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 main-cards">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Manuale_dell'inquisitore_Eymerich.jpg" class="card-img-top" alt="Manuale dell'inquisitore di Nicolàs Eymerich">
+              <div class="card-body">
+                <a class="card-link" href="">Manuale dell'inquisitore di Nicolàs Eymerich</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 main-cards">
+            <div class="card" style="width: 18rem;">
+              <img src="img/libro_strega-Pico_della_mirandola.jpg" class="card-img-top" alt="Libro delle illusioni di Giovanni Francesco II Pico della Mirandola">
+              <div class="card-body">
+                <a class="card-link" href="">Libro detto strega o delle illusioni del demonio di Giovanni Francesco II Pico della Mirandola.</a>
+              </div>
+           </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+<footer>
+    <p>
+      <a class="footer-link" href="">Sofia Biancosino -</a>
+      <a class="footer-link" href="">Ultimo aggiornamento dei contenuti: 20/05/25 -</a>
+      <a class="footer-link" href="project-plan.html">Project plan -</a>
+      <a class="footer-link" href="">Copyright -</a>
+      <a class="footer-link" href="">Supporto</a>
+    </p>
+</footer>
+</body>
+</html>
