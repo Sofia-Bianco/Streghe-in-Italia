@@ -12,7 +12,7 @@ body {
   color: black;
 }
 
-.h1 {
+h1 {
   font-weight: bold;
 }
 .introduction {
@@ -62,7 +62,7 @@ footer {
   text-align: center;
 }
 a:link {
-  color:black; !important
+  color:black !important;
 }
 
 /* luoghi.html */
@@ -83,10 +83,6 @@ a:link {
 
 a {
   color: black;
-}
-
-.page-link {
-  color: Black;
 }
 
 /* item.html */
