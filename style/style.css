@@ -62,7 +62,7 @@ footer {
   text-align: center;
 }
 a:link {
-  color:black;
+  color:black; !important
 }
 
 /* luoghi.html */
@@ -79,6 +79,7 @@ a:link {
 
 .pagination {
   margin-left: 8%;
+  color: black;
 }
 
 a {
