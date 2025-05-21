@@ -82,7 +82,7 @@ a:link {
 }
 
 .page-link {
-  color: black;
+  color: black !important;
 }
 
 a {
