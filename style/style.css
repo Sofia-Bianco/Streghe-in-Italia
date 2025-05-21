@@ -81,6 +81,10 @@ a:link {
   margin-left: 8%;
 }
 
+.page-link {
+  color: black;
+}
+
 a {
   color: black;
 }
